@@ -66,6 +66,23 @@ $movies = [
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore ea libero est aliquid sapiente ducimus cupiditate nemo id, consectetur placeat voluptatibus vitae hic delectus commodi ad impedit. Et, maxime hic?</p>
             </div>
         </div>
+        <div class="movies">
+            <div class="container">
+                <div class="row row-cols-2 row-cols-md-5">
+                    <?php foreach ($movies as $movie) : ?>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img class="card-img-top" src="<?= $movie->poster_image ?>" alt="image <?= $movie->title ?>">
+                                <div class="card-body">
+                                    <h6 class="card-title"><?= $movie->title ?></h6>
+                                    <p class="card-text text-secondary"><?= $movie->realise_date ?></p>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endforeach ?>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>SITE FOOTER HERE</footer>
     <!-- Bootstrap JavaScript Libraries -->
