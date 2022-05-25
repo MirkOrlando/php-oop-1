@@ -40,4 +40,37 @@ $movies = [
     new Movie("Eternals", "https://www.themoviedb.org/t/p/original/bcCBq9N1EMo3daNIjWJ8kYvrQm6.jpg", "https://www.themoviedb.org/t/p/original/sek1J4uqAh1vcJF5PM08A1QuNsn.jpg", "03/11/2021", "The Eternals are a team of ancient aliens who have been living on Earth in secret for thousands of years. When an unexpected tragedy forces them out of the shadows, they are forced to reunite against mankind’s most ancient enemy, the Deviants."),
 ];
 
-var_dump($movies);
+//var_dump($movies);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>php-opp-1</title>
+    <!-- Bootstrap CSS v5.1.3 -->
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' integrity='sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3' crossorigin='anonymous'>
+</head>
+
+<body>
+    <header>SITE HEADER HERE</header>
+    <main>
+        <div class="p-5 bg-dark text-white">
+            <div class="container">
+                <h1 class="display-3 text-danger">Marvel Cinematic Universe</h1>
+                <p class="lead">Following the latest MCU's movies</p>
+                <hr class="my-2">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore ea libero est aliquid sapiente ducimus cupiditate nemo id, consectetur placeat voluptatibus vitae hic delectus commodi ad impedit. Et, maxime hic?</p>
+            </div>
+        </div>
+    </main>
+    <footer>SITE FOOTER HERE</footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js' integrity='sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13' crossorigin='anonymous'></script>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js' integrity='sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p' crossorigin='anonymous'></script>
+</body>
+
+</html>
