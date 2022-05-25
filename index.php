@@ -53,10 +53,46 @@ $movies = [
     <title>php-opp-1</title>
     <!-- Bootstrap CSS v5.1.3 -->
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' integrity='sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3' crossorigin='anonymous'>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        header {
+            padding: 0.5rem;
+            position: sticky;
+            top: 0;
+        }
+
+        header .logo {
+            width: 50px;
+        }
+
+        .card-img-top {
+            box-shadow: 0px 10px 10px -3px grey;
+            transition: all 250ms linear;
+        }
+
+        .card-title {
+            transition: all 250ms linear;
+        }
+
+        .card:hover .card-img-top {
+            transform: translate(0, -5px);
+        }
+
+        .card:hover .card-title {
+            color: #ff0000;
+        }
+    </style>
 </head>
 
 <body>
-    <header>SITE HEADER HERE</header>
+    <header>
+        <div class="logo">
+            <img class="img-fluid" src="https://tous-logos.com/wp-content/uploads/2018/07/Symbole-Marvel.jpg" alt="">
+        </div>
+    </header>
     <main>
         <div class="p-5 bg-dark text-white">
             <div class="container">
@@ -66,12 +102,13 @@ $movies = [
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore ea libero est aliquid sapiente ducimus cupiditate nemo id, consectetur placeat voluptatibus vitae hic delectus commodi ad impedit. Et, maxime hic?</p>
             </div>
         </div>
-        <div class="movies">
+        <div class="movies py-3">
+            <h2>Latest MCU's Movies</h2>
             <div class="container">
                 <div class="row row-cols-2 row-cols-md-5">
                     <?php foreach ($movies as $movie) : ?>
                         <div class="col">
-                            <div class="card h-100">
+                            <div class="card h-100 border-0">
                                 <img class="card-img-top" src="<?= $movie->poster_image ?>" alt="image <?= $movie->title ?>">
                                 <div class="card-body">
                                     <h6 class="card-title"><?= $movie->title ?></h6>
