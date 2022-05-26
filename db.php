@@ -1,4 +1,6 @@
 <?php
+require_once __DIR__ . "/Models/Movies.php";
+
 $movies = [
     new Movie("Ant-Man and the Wasp: Quantumania", "https://www.themoviedb.org/t/p/original/mYCBuVGQGWPlUNZQusdHfbSzP1h.jpg", "https://www.themoviedb.org/t/p/original/rizh9m7xkVqMsOZeGmLLPoZZYZC.jpg", "17/02/2023", "The third film in the Marvel Studios' Ant-Man trilogy"),
     new Movie("Thor: Love and Thunder", "https://www.themoviedb.org/t/p/original/4zLfBbGnuUBLbMVtagTZvzFwS8l.jpg", "https://www.themoviedb.org/t/p/original/cOkx3uu5FVgC902Q6Y3MxLpBWbX.jpg", "07/06/2022", "After his retirement is interrupted by a galactic killer who seeks the extinction of the gods, Thor enlists the help of King Valkyrie, Korg, and ex-girlfriend Jane Foster, who now inexplicably wields Mjolnir as the Mighty Thor. Together, they embark upon a harrowing cosmic adventure to uncover the mystery of the God Butcher’s vengeance and stop him before it’s too late."),
